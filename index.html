@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Quiks | Checkout Simplified</title>
-    <link rel="shortcut icon" href="quiks.png" type="image/x-icon">
+    <title>InstaHelp | Instant Help</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <meta name="msapplication-TileColor" content="#663fb5">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#663fb5">
@@ -32,31 +32,154 @@
 
 <!-- Navigation
 ================================================== -->
+<nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span class="icon-logo"></span>
+      <span class="sr-only">InstaHelp</span>
+    </a>
+    <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
+      &#9776;
+    </a>
+    <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+      <span class="icon-user"></span>
+    </a>
+    <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+      <ul class="nav navbar-nav pull-xs-right">
+        <li class="nav-item nav-item-toggable hidden-md-up">
+          <form class="navbar-form">
+            <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+          </form>
+        </li>
+        <li class="navbar-divider hidden-sm-down"></li>
+        <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
+          <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icon-search"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenu1">
+            <form class="navbar-form">
+              <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+            </form>
+          </div>
+        </li>
+        <li class="nav-item dropdown hidden-sm-down textselect-off">
+          <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/ic_author.jpg" height="40" width="40" alt="Avatar" class="img-circle"> <span class="icon-caret-down"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenu2">
+            <div class="media">
+              <div class="media-left">
+                <img src="images/ic_author.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+              </div>
+              <div class="media-body media-middle">
+                <h5 class="media-heading">Ishita Bhandari</h5>
+                <h6>ishita.bhandari10@gmail.com.com</h6>
+              </div>
+            </div>
+            <a href="#" class="dropdown-item text-uppercase">View Profile</a>
+            <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
+            <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
+            <a href="#" class="btn-circle has-gradient pull-xs-right">
+              <span class="sr-only">Edit</span>
+              <span class="icon-edit"></span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
+      <div class="media m-t-1">
+        <div class="media-left">
+          <img src="images/ic_author.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+        </div>
+        <div class="media-body media-middle">
+          <h5 class="media-heading">Ishita Bhandari</h5>
+          <h6>ishita.bhandari10@gmail.com</h6>
+        </div>
+      </div>
+      <a href="#" class="dropdown-item text-uppercase">View Profile</a>
+      <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
+      <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
+      <a href="#" class="btn-circle has-gradient pull-xs-right m-b-1">
+        <span class="sr-only">Edit</span>
+        <span class="icon-edit"></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+
+
 
 
 
 <!-- Hero Section
 ================================================== -->
 
-<header class="bg-white bg-inverse text-xs-center center-vertically" role="banner">
-    <div class="container">
-        <h1 class="display-3"><img
-                src="logo.png" height="100px"
-                style="margin-top: 40px;"></h1>
-        <br>
-      <h2 class="m-b-3" style="color: black">At your service 24 x 7 </h2>
-      <a class="btn btn-secondary-outline m-b-1" style="border-color: grey; color: saddlebrown" href="mailto:ishita.bhandari10@gmail.com" role="button">Contact Us</a>
-    </div>
+<header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
+  <div class="container">
+    <h1 class="display-3">InstaHelp, your bodyguard.</h1>
+    <h2 class="m-b-3">Get help, <em>instantly</em>, at anytime, anywhere!</h2>
+    <a class="btn btn-outline-secondary m-b-1" href="#" role="button">24x7 Help</a>
+    <ul class="nav nav-inline social-share">
+      <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><span class="icon-linkedin"></span> 356</a></li>
+    </ul>
+  </div>
 </header>
+
 
 <!-- Intro
 ================================================== -->
 
+<section class="section-intro bg-faded text-xs-center">
+  <div class="container">
+    <h3 class="wp wp-1">Be your own superhero and fight the crime, fearlessly</h3>
+    <p class="lead wp wp-2">Don't worry we've got your back. </p>
+    <img src="img/hero.png" alt="Superhero mock" class="img-fluid wp wp-3">
+  </div>
+</section>
 
 <!-- Features
 ================================================== -->
 
-
+<section class="section-features text-xs-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-block">
+            <span class="icon-pen display-1"></span>
+            <h4 class="card-title">25</h4>
+            <h6 class="card-subtitle text-muted">Security Features</h6>
+            <p class="card-text">With over dozens of our spectacular features you are never alone. Keep your loved ones connected. Help is now, just a click away. Find a near buy police station and get instant backup. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-block">
+            <span class="icon-thunderbolt display-1"></span>
+            <h4 class="card-title">Ultra</h4>Sleek Design</h6>
+            <p class="card-text">Our clean design enables hassle free user-app interaction. Anyone can easily use this application anywhere.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card m-b-0">
+          <div class="card-block">
+            <span class="icon-heart display-1"></span>
+            <h4 class="card-title">Free</h4>
+            <h6 class="card-subtitle text-muted">Forever and ever</h6>
+            <p class="card-text">Don't worry, there will be no compromises on the features because your safety is our responsibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Testimonials
 ================================================== -->
