@@ -6,25 +6,30 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>InstaHelp | Instant Help</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <meta name="msapplication-TileColor" content="#663fb5">
+    <meta name="msapplication-TileColor" content="#438eef">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#663fb5">
+    <meta name="theme-color" content="#438eef">
     <link rel="stylesheet" href="landio.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
-        .material-icons.md-18 {
-            font-size: 18px;
-        }
-        .material-icons.md-24 {
-            font-size: 24px;
-        }
-        .material-icons.md-36 {
-            font-size: 36px;
-        }
-        .material-icons.md-48 {
-            font-size: 48px;
-        }
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+      .bg {
+        /* The image used */
+        background-image: url("nacho-arteaga-149539.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
     </style>
 </head>
 
@@ -35,7 +40,7 @@
 <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <span class="icon-logo"></span>
+      <img src="logo.png" height="60">
       <span class="sr-only">InstaHelp</span>
     </a>
     <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
@@ -46,43 +51,24 @@
     </a>
     <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
       <ul class="nav navbar-nav pull-xs-right">
-        <li class="nav-item nav-item-toggable hidden-md-up">
-          <form class="navbar-form">
-            <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
-          </form>
-        </li>
-        <li class="navbar-divider hidden-sm-down"></li>
-        <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
-          <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="icon-search"></span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenu1">
-            <form class="navbar-form">
-              <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
-            </form>
-          </div>
-        </li>
         <li class="nav-item dropdown hidden-sm-down textselect-off">
           <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="images/ic_author.jpg" height="40" width="40" alt="Avatar" class="img-circle"> <span class="icon-caret-down"></span>
+            <img src="face1.jpg" height="40" width="40" alt="Avatar" class="img-circle">
           </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenu2">
             <div class="media">
               <div class="media-left">
-                <img src="images/ic_author.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+                <img src="face1.jpg" height="60" width="60" alt="Avatar" class="img-circle">
               </div>
               <div class="media-body media-middle">
-                <h5 class="media-heading">Ishita Bhandari</h5>
-                <h6>ishita.bhandari10@gmail.com.com</h6>
+                <h5 class="media-heading">Jay</h5>
+                <h6>jay10@gmail.com</h6>
               </div>
             </div>
             <a href="#" class="dropdown-item text-uppercase">View Profile</a>
             <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
             <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
-            <a href="#" class="btn-circle has-gradient pull-xs-right">
-              <span class="sr-only">Edit</span>
-              <span class="icon-edit"></span>
-            </a>
+           </a>
           </div>
         </li>
       </ul>
@@ -90,11 +76,11 @@
     <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
       <div class="media m-t-1">
         <div class="media-left">
-          <img src="images/ic_author.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+          <img src="face1.jpg" height="60" width="60" alt="Avatar" class="img-circle">
         </div>
         <div class="media-body media-middle">
-          <h5 class="media-heading">Ishita Bhandari</h5>
-          <h6>ishita.bhandari10@gmail.com</h6>
+          <h5 class="media-heading">Jay</h5>
+          <h6>jay10@gmail.com</h6>
         </div>
       </div>
       <a href="#" class="dropdown-item text-uppercase">View Profile</a>
@@ -109,23 +95,18 @@
 </nav>
 
 
-
-
-
-
-
 <!-- Hero Section
 ================================================== -->
 
-<header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
-  <div class="container">
+<header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner" >
+  <div class="bg">
     <h1 class="display-3">InstaHelp, your bodyguard.</h1>
     <h2 class="m-b-3">Get help, <em>instantly</em>, at anytime, anywhere!</h2>
-    <a class="btn btn-outline-secondary m-b-1" href="#" role="button">24x7 Help</a>
+    <a class="btn btn-outline-secondary m-b-1" href="#" role="button" style="border-color: #25232a;">24x7 Help</a>
     <ul class="nav nav-inline social-share">
-      <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
-      <li class="nav-item"><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
-      <li class="nav-item"><a class="nav-link" href="#"><span class="icon-linkedin"></span> 356</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><img src="icon-twitter.png">1024</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><img src="icon-facebook.png" height="24"> 562</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><img src="icon-linkedin.png" height="24"> 356</a></li>
     </ul>
   </div>
 </header>
@@ -137,8 +118,8 @@
 <section class="section-intro bg-faded text-xs-center">
   <div class="container">
     <h3 class="wp wp-1">Be your own superhero and fight the crime, fearlessly</h3>
-    <p class="lead wp wp-2">Don't worry we've got your back. </p>
-    <img src="img/hero.png" alt="Superhero mock" class="img-fluid wp wp-3">
+    <p class="lead wp wp-2">Don't worry, we've got your back. </p>
+    <img src="mock.jpg" style="height: 600px" width="100%" alt="Superhero mock" class="img-fluid wp wp-3">
   </div>
 </section>
 
@@ -151,18 +132,19 @@
       <div class="col-md-4">
         <div class="card">
           <div class="card-block">
-            <span class="icon-pen display-1"></span>
+            <img src="005-shield.png">
             <h4 class="card-title">25</h4>
             <h6 class="card-subtitle text-muted">Security Features</h6>
-            <p class="card-text">With over dozens of our spectacular features you are never alone. Keep your loved ones connected. Help is now, just a click away. Find a near buy police station and get instant backup. </p>
+            <p class="card-text">With over dozens of our spectacular features you are never alone. Keep your loved ones connected. Find a near buy police station and get instant backup. </p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
           <div class="card-block">
-            <span class="icon-thunderbolt display-1"></span>
-            <h4 class="card-title">Ultra</h4>Sleek Design</h6>
+            <img src="005-shield.png">
+            <h4 class="card-title">Ultra</h4>
+            <h6 class="card-subtitle text-muted">Sleek Design</h6>
             <p class="card-text">Our clean design enables hassle free user-app interaction. Anyone can easily use this application anywhere.</p>
           </div>
         </div>
@@ -170,7 +152,7 @@
       <div class="col-md-4">
         <div class="card m-b-0">
           <div class="card-block">
-            <span class="icon-heart display-1"></span>
+            <img src="002-emoticon-with-happy-face.png">
             <h4 class="card-title">Free</h4>
             <h6 class="card-subtitle text-muted">Forever and ever</h6>
             <p class="card-text">Don't worry, there will be no compromises on the features because your safety is our responsibility.</p>
@@ -184,17 +166,100 @@
 <!-- Testimonials
 ================================================== -->
 
-
-<!-- Text Content
-================================================== -->
-
-
-<!-- News
-================================================== -->
+<section class="section-testimonials text-xs-center bg-inverse">
+  <div class="container">
+    <h3 class="sr-only">Testimonials</h3>
+    <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <blockquote class="blockquote">
+            <img src="face1.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+            <p class="h3">It is very important for women to feel secure first, if you want them to be independent.</p>
+            <footer>Anushka Sharma</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <img src="face2.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+            <p class="h3">It's a relief for many who get anxious whenever their loved ones step out of the house.</p>
+            <footer> P. V. Sindhu <br> Olympics silver medalist</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <img src="face3.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+            <p class="h3">Excellent way of ensuring safety of your loved ones.</p>
+            <footer>Shahrukh Khan<br>Needs no introduction!</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <img src="face4.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+            <p class="h3">A much needed idea put effectively into use!</p>
+            <footer>Vijay Shekhar Sharma<br>Founder of Paytm</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <img src="face5.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+            <p class="h3">Great step to make our soceity more responsible and crime free.</p>
+            <footer>Maneka Gandhi <br>Union Minister of women and Child Development</footer>
+          </blockquote>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li class="active"><img src="face1.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="0" class="img-fluid img-circle"></li>
+        <li><img src="face2.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="1" class="img-fluid img-circle"></li>
+        <li><img src="face3.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="2" class="img-fluid img-circle"></li>
+        <li><img src="face4.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="3" class="img-fluid img-circle"></li>
+        <li><img src="face5.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="4" class="img-fluid img-circle"></li>
+      </ol>
+    </div>
+  </div>
+</section>
 
 
 <!-- Sign Up
 ================================================== -->
+
+<section class="section-signup bg-faded">
+  <div class="container">
+    <h3 class="text-xs-center m-b-3">Sign up to receive free updates as soon as they hit!</h3>
+    <form>
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+          <div class="form-group has-icon-left form-control-name">
+            <label class="sr-only" for="inputName">Your name</label>
+            <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your name">
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="form-group has-icon-left form-control-email">
+            <label class="sr-only" for="inputEmail">Email address</label>
+            <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email address" autocomplete="off">
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="form-group has-icon-left form-control-password">
+            <label class="sr-only" for="inputPassword">Enter a password</label>
+            <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Enter a password" autocomplete="off">
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Sign up for free!</button>
+          </div>
+        </div>
+      </div>
+      <label class="c-input c-checkbox">
+        <input type="checkbox" checked>
+        <span class="c-indicator"></span> I agree to InstaHelp’s <a href="#">terms of service</a>
+      </label>
+    </form>
+  </div>
+</section>
+
+
 
 
 <!-- Footer
@@ -205,6 +270,9 @@
         <div class="row">
             <div class="col-md-6 col-lg-5">
                 <div class="media">
+                  <div class="media-left">
+                    <img src="logo.png" height="40">
+                  </div>
                     <small class="media-body media-bottom">
                         &copy; InstaHelp 2017 <br>
                         Designed and developed by Ishita Bhandari
