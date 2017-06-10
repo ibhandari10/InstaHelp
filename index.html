@@ -38,56 +38,13 @@
 <!-- Navigation
 ================================================== -->
 <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
-  <div class="container">
+  <div class="bg">
+   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="templates/logo.png" height="60">
       <span class="sr-only">InstaHelp</span>
     </a>
-    <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
-      &#9776;
-    </a>
-    <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
-      <span class="icon-user"></span>
-    </a>
-    <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
-      <ul class="nav navbar-nav pull-xs-right">
-        <li class="nav-item dropdown hidden-sm-down textselect-off">
-          <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="templates/face1.jpg" height="40" width="40" alt="Avatar" class="img-circle">
-          </a>
-          <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenu2">
-            <div class="media">
-              <div class="media-left">
-                <img src="templates/face1.jpg" height="60" width="60" alt="Avatar" class="img-circle">
-              </div>
-              <div class="media-body media-middle">
-                <h5 class="media-heading">Jay</h5>
-                <h6>jay10@gmail.com</h6>
-              </div>
-            </div>
-            <a href="#" class="dropdown-item text-uppercase">View Profile</a>
-            <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
-            <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
-           </a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
-      <div class="media m-t-1">
-        <div class="media-left">
-          <img src="templates/face1.jpg" height="60" width="60" alt="Avatar" class="img-circle">
-        </div>
-        <div class="media-body media-middle">
-          <h5 class="media-heading">Jay</h5>
-          <h6>jay10@gmail.com</h6>
-        </div>
-      </div>
-      <a href="#" class="dropdown-item text-uppercase">View Profile</a>
-      <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
-      <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
-      </a>
-    </div>
+   </div>
   </div>
 </nav>
 
@@ -101,9 +58,9 @@
     <h2 class="m-b-3">Get help, <em>instantly</em>, at anytime, anywhere!</h2>
     <a class="btn btn-outline-secondary m-b-1" href="#" role="button" style="border-color: #25232a;">24x7 Help</a>
     <ul class="nav nav-inline social-share">
-      <li class="nav-item"><a class="nav-link" href="#"><img src="templates/icon-twitter.png">1024</a></li>
-      <li class="nav-item"><a class="nav-link" href="#"><img src="templates/icon-facebook.png" height="24"> 562</a></li>
-      <li class="nav-item"><a class="nav-link" href="#"><img src="templates/icon-linkedin.png" height="24"> 356</a></li>
+      <li class="nav-item"><a class="nav-link" href="www.twitter.com"><img src="templates/icon-twitter.png">1024</a></li>
+      <li class="nav-item"><a class="nav-link" href="www.facebook.com"><img src="templates/icon-facebook.png" height="24"> 562</a></li>
+      <li class="nav-item"><a class="nav-link" href="www.linkedin.com"><img src="templates/icon-linkedin.png" height="24"> 356</a></li>
     </ul>
   </div>
 </header>
@@ -116,7 +73,7 @@
   <div class="container">
     <h3 class="wp wp-1">Be your own superhero and fight the crime, fearlessly</h3>
     <p class="lead wp wp-2">Don't worry, we've got your back. </p>
-    <img src="templates/mock.jpg" style="height: 600px" width="100%" alt="Superhero mock" class="img-fluid wp wp-3">
+    <img src="templates/mock.jpg" style="height: 400px" width="100%" alt="Superhero mock" class="img-fluid wp wp-3">
   </div>
 </section>
 
@@ -149,7 +106,7 @@
       <div class="col-md-4">
         <div class="card m-b-0">
           <div class="card-block">
-            <img src="002-emoticon-with-happy-face.png">
+            <img src="templates/002-emoticon-with-happy-face.png">
             <h4 class="card-title">Free</h4>
             <h6 class="card-subtitle text-muted">Forever and ever</h6>
             <p class="card-text">Don't worry, there will be no compromises on the features because your safety is our responsibility.</p>
@@ -158,6 +115,13 @@
       </div>
     </div>
   </div>
+</section>
+
+<!-- Video
+================================================== -->
+<section class="section-video text-xs-center wp wp-4">
+  <h3 class="sr-only">Video</h3>
+  <iframe frameborder="0" width="95%" height="780" src="https://biteable.com/watch/embed/instahelp-1429273" allowfullscreen="true"></iframe>
 </section>
 
 <!-- Testimonials
@@ -218,46 +182,6 @@
 
 <!-- Sign Up
 ================================================== -->
-
-<section class="section-signup bg-faded">
-  <div class="container">
-    <h3 class="text-xs-center m-b-3">Sign up to receive free updates as soon as they hit!</h3>
-    <form>
-      <div class="row">
-        <div class="col-md-6 col-xl-3">
-          <div class="form-group has-icon-left form-control-name">
-            <label class="sr-only" for="inputName">Your name</label>
-            <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your name">
-          </div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="form-group has-icon-left form-control-email">
-            <label class="sr-only" for="inputEmail">Email address</label>
-            <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email address" autocomplete="off">
-          </div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="form-group has-icon-left form-control-password">
-            <label class="sr-only" for="inputPassword">Enter a password</label>
-            <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Enter a password" autocomplete="off">
-          </div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Sign up for free!</button>
-          </div>
-        </div>
-      </div>
-      <label class="c-input c-checkbox">
-        <input type="checkbox" checked>
-        <span class="c-indicator"></span> I agree to InstaHelp’s <a href="#">terms of service</a>
-      </label>
-    </form>
-  </div>
-</section>
-
-
-
 
 <!-- Footer
 ================================================== -->
